@@ -1,0 +1,40 @@
+
+/* Basic CSS for header and navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header .logo {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .navbar {
+    float: right;
+    margin-right: 20px;
+}
+.header .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+.header .navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
